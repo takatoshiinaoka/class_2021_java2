@@ -1,5 +1,5 @@
 # class_2021_java2
-このリポジトリはJava2の授業で作成したプログラムです。
+このリポジトリはJava2の授業で作成したプログラムを保存しています。
 
 [石原先生の授業資料ページ 2021_JavaProgramming2(学外はVPNが必要)](https://www.fit.ac.jp/~m-ishihara/Lectures/JavaProgramming2/prints.html)
 　
