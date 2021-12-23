@@ -1,4 +1,7 @@
 # cnmnmn
-�A�C�E�G�I
+ƒAƒCƒEƒGƒI
 
 [google](https://www.goole.com)
+
+
+ここを変更します
