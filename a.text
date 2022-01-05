@@ -1,0 +1,56 @@
+import java.awt.*;
+import java.awt.event.*;
+
+public class Assignment1 extends Frame
+{
+    private Button bt;
+
+    public static void main(String[] args)
+    {
+        Assignment1 sm = new Assignment1();
+    }
+    public Assignment1()
+    {
+        super("課題1");
+
+        bt = new Button();
+        add(bt);
+
+        addWindowListener(new SampleWindowListener());
+        bt.addMouseListener(new SampleMouseListener());
+
+        setSize(250, 200);
+        setVisible(true);
+    }
+    class SampleWindowListener extends WindowAdapter
+    {
+        public void windowClosing(WindowEvent e)
+        {
+            System.exit(0);
+        }
+    }
+    
+    class SampleMouseListener implements MouseListener
+    {
+        public void mouseClicked(MouseEvent e)
+        {
+            bt.setLabel("クリックされました");
+        }
+        public void mouseEntered(MouseEvent e)
+        {
+            bt.setLabel("画面上に入りました");
+        }
+        public void mouseExited(MouseEvent e)
+        {
+            bt.setLabel("画面から出ました");
+        }
+        public void mousePressed(MouseEvent e)
+        {
+            bt.setLabel("ボタンが押されました");
+        }
+        public void mouseReleased(MouseEvent e)
+        {
+            bt.setLabel("ボタンが離されました");
+        }
+    }
+}
